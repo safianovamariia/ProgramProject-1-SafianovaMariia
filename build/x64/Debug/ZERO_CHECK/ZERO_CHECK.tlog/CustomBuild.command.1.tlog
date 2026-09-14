@@ -1,0 +1,10 @@
+^C:\PROJECTS\2026_09_12_PP1\BUILD\CMAKEFILES\2B41E849784796D6F2BB3F10A4411DFE\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Projects/2026_09_12_PP1 -BC:/Projects/2026_09_12_PP1/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Projects/2026_09_12_PP1/build/Project1.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
